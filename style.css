@@ -137,4 +137,7 @@ td{
     section{
         padding: 20px;
     }
+    h1{
+        line-height: 1.2;
+    }
 }
