@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+    background-color: hsl(30, 54%, 90%);
+    line-height: 2;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 45vw;
+    padding: 35px;
+    margin: 25px auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1{
+    font-family: 'Young Serif', serif;
+    color: hsl(24, 5%, 18%);
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+p{
+    font-size: 0.9rem;
+    padding-bottom: 20px;
+}
+
+.preparation-time{
+    width: 100%;
+    padding: 20px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+}
+
+.preparation-time h2{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: hsl(330, 100%, 20%);
+}
+
+ul,
+ol
+{
+    padding-left: 20px;
+}
+
+li{
+    padding-left: 20px;
+}
+
+li::marker{
+    color: hsl(14, 45%, 36%);
+}
+
+.preparation-time li::marker{
+    color: hsl(330, 100%, 20%);
+}
+
+.bold{
+    font-weight: 600;
+}
+
+h2{
+    font-family: 'Young Serif', serif;
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+}
+
+section{
+    padding-bottom: 20px;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+.recipe-details,
+section:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    text-indent: 8%;
+}
+
+tr{
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+tr:last-child{
+    border-bottom: none;
+}
+
+th{
+    padding: 10px 0;
+    font-weight: 400;
+}
+
+td{
+    padding: 10px 0;
+    color: hsl(14, 45%, 36%);
+}
+
+@media (max-width: 768px) {
+    img{
+        width: 100%;
+        border-radius: 0;
+    }
+    main{
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        max-width: 100vw;
+    }
+    section{
+        padding: 20px;
+    }
+}
