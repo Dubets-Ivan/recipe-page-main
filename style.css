@@ -6,15 +6,20 @@
     padding: 0;
 }
 
+html{
+    font-size: 16px;
+}
+
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Outfit', sans-serif;
-    font-size: 16px;
+    font-size: 0.9rem;
     color: hsl(30, 10%, 34%);
     background-color: hsl(30, 54%, 90%);
     line-height: 2;
+    padding: 100px 0;
 }
 
 main{
@@ -24,7 +29,6 @@ main{
     width: 100%;
     max-width: 45vw;
     padding: 35px;
-    margin: 25px auto;
     background-color: hsl(0, 0%, 100%);
     border-radius: 20px;
 }
@@ -42,7 +46,6 @@ h1{
 }
 
 p{
-    font-size: 0.9rem;
     padding-bottom: 20px;
 }
 
@@ -51,6 +54,12 @@ p{
     padding: 20px;
     background-color: hsl(330, 100%, 98%);
     border-radius: 10px;
+}
+
+h2{
+    font-family: 'Young Serif', serif;
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
 }
 
 .preparation-time h2{
@@ -73,18 +82,16 @@ li::marker{
     color: hsl(14, 45%, 36%);
 }
 
+ol li::marker{
+    font-weight: 600;
+}
+
 .preparation-time li::marker{
     color: hsl(330, 100%, 20%);
 }
 
 .bold{
     font-weight: 600;
-}
-
-h2{
-    font-family: 'Young Serif', serif;
-    color: hsl(14, 45%, 36%);
-    font-weight: 400;
 }
 
 section{
@@ -124,6 +131,9 @@ td{
 }
 
 @media (max-width: 768px) {
+    body{
+        padding: 0;
+    }
     img{
         width: 100%;
         border-radius: 0;
